@@ -1,7 +1,18 @@
+html {
+  font-size: 16px;
+}
+
+
+
 body {
     color: darkslategray;
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../images/white_brick_wall.png");
     
+    background-repeat: no-repeat;
+    /* x-axis y-axis */
+    background-position: 100px 400px;
+    background-size: contain;
 }
 h1{
     color: white;
@@ -19,6 +30,8 @@ nav ul {
 nav ul a {
     color: darkslategray;
     text-decoration: none;
+    font-size: 1.5rem;
+    /* 1.5 x 16px = 24px */
 }
 
 .orange-link {
@@ -27,10 +40,20 @@ nav ul a {
     text-decoration: none;
 }
 #treatofweek {
-    background-color: orange;
+    background: darkslategray url("../images/bread.jpg") no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    font-size: 1.5rem;
+    /* 1.5 x 16px = 24px */
+    padding: 1em;
+    /* 1 x 24 px = 24px */
+    width: 50%;
+}
+#treatofweek dl ul li:nth-child(n) {
+    background-color: transparent;
 }
 .large-text {
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 article > p{
@@ -84,7 +107,7 @@ even = 2n = 2,4,6,8......
 odd = 2n+1 =1,3,5,7,9......
 */
 
-dl ul li:nth-child(3) {
+dl ul li:nth-child(odd) {
     background-color: white;
 }
 footer {
