@@ -27,19 +27,61 @@ h1,h2,h3,h4 {
 nav ul {
     list-style: none;
 }
+/* EX 1 - Diaplay and Box Sizing */
+nav ul li {
+    display: inline-block;
+    width: 49%;
+    padding: 1em;
+    box-sizing: border-box;
+    
+}
 nav ul a {
+    display: block;
     color: darkslategray;
     text-decoration: none;
     font-size: 1.5rem;
     /* 1.5 x 16px = 24px */
 }
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+}
 
 .orange-link {
+    padding: 5em;
+    display: inline-block;
     background-color: darkslategray;
     color: orange;
     text-decoration: none;
 }
+
+.orange-link.large-text {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/* Float */
+article,
+aside {
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid black;
+    padding: 1.5em;
+    box-sizing: border-box;
+    float: left;
+}
+aside{
+    width: 20%;
+}
 #treatofweek {
+    /* clearing the float */
+    position: relative;
+    clear: left;
     background: darkslategray url("../images/bread.jpg") no-repeat center center;
     background-size: cover;
     color: #fff;
@@ -48,6 +90,7 @@ nav ul a {
     padding: 1em;
     /* 1 x 24 px = 24px */
     width: 50%;
+    padding: 1em 1em 3em 1em;
 }
 #treatofweek dl ul li:nth-child(n) {
     background-color: transparent;
