@@ -180,3 +180,15 @@ footer a:hover{
         float: right;
     }
 }
+
+
+.largekitten{
+    display: none;
+    list-style: none;
+    border-bottom: 1px solid;
+    border-radius: inherit;
+    padding: 10px;
+    display: block;
+    display: inline-block;
+  }
+  @media screen and (min-width 480px)
