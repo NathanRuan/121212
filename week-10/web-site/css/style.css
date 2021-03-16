@@ -124,7 +124,7 @@ p{
 .nav-list a {
     text-decoration: none;
     color: inherit;
-    padding: 1em;
+    padding: 1em 0;
     display: block;
 }
 .nav-list a:hover {
@@ -218,8 +218,9 @@ footer a:hover{
         display: flex;
     }
     .nav-list li{
-        flex-grow: 1;
+        flex: 1;
         border-bottom: none;
+        border-right: 1px solid gray;
     }
 
     /* App selection */
@@ -235,12 +236,8 @@ footer a:hover{
 }
 
 
-.largekitten{
-    display: none;
-    list-style: none;
-    border-bottom: 1px solid;
-    border-radius: inherit;
-    padding: 10px;
-    display: block;
-    display: inline-block;
-  }
+@media screen and (min-width: 800px) {
+    .actions-list li {
+        max-width: 20%;
+    }
+}
